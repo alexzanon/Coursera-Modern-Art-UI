@@ -1,8 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
 
     <string name="app_name">ModernUILab</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-
+    <string name="dialog_title">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson</string>
+	<string name="dialog_message">Click Below To Learn!</string>
+    <string name="dialog_yes_button">Visit MOMA</string>
+    <string name="dialog_no_button">Not Now</string>
 </resources>

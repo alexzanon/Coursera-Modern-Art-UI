@@ -2,7 +2,11 @@ package course.labs.modernuilab;
 
 import android.app.Activity;
 import android.app.ActionBar;
+import android.app.AlertDialog;
 import android.app.Fragment;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -37,11 +41,37 @@ public class MainActivity extends Activity {
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
 		if (id == R.id.action_settings) {
+			showMoreInfo();
 			return true;
 		}
 		return super.onOptionsItemSelected(item);
 	}
 
+	private void showMoreInfo() {
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setTitle(R.string.dialog_title);
+		builder.setMessage(R.string.dialog_message);
+		builder.setPositiveButton(R.string.dialog_yes_button, new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.moma.org/"));
+				startActivity(intent);
+				
+			}
+		});
+		builder.setNegativeButton(R.string.dialog_no_button, new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				dialog.cancel();
+				
+			}
+		});
+		AlertDialog alert = builder.create();
+		alert.show();
+	}
+	
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */
