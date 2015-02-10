@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity {
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.moma.org/"));
+				Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.moma.org/m"));
 				startActivity(intent);
 				
 			}
