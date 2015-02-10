@@ -1,8 +1,9 @@
 <resources>
 
-    <string name="app_name">ModernUILab</string>
+    <string name="app_name">Modern Art UI</string>
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_more_info">More Info</string>
+    
     <string name="dialog_title">Inspired by the works of artists such as Piet Mondrian and Ben Nicholson</string>
 	<string name="dialog_message">Click Below To Learn!</string>
     <string name="dialog_yes_button">Visit MOMA</string>

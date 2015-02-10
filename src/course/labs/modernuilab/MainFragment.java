@@ -71,7 +71,7 @@ public class MainFragment extends Fragment implements SeekBar.OnSeekBarChangeLis
 		changeColor(mView1, progress);
 		changeColor(mView2, progress);
 		changeColor(mView3, progress);
-		changeColor(mView4, progress);
+		//changeColor(mView4, progress);
 		changeColor(mView5, progress);	
 	}
 

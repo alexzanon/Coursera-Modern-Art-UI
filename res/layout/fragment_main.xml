@@ -2,8 +2,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:background="@android:color/black" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,27 +23,26 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dip"
                 android:layout_weight="1" />
-            
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/separate_view" />
-            
+
             <View
                 android:id="@+id/view2"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
                 android:layout_weight="1" />
-            
-			<View
+
+            <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/separate_view" />
-            
         </LinearLayout>
-        
+
         <View
-        	android:layout_width="match_parent"
-        	android:layout_height="@dimen/separate_view" />
-        
+            android:layout_width="@dimen/separate_view"
+            android:layout_height="match_parent" />
+
         <LinearLayout
             android:layout_width="0dip"
             android:layout_height="match_parent"
@@ -76,9 +75,8 @@
                 android:layout_height="0dip"
                 android:layout_weight="1" />
         </LinearLayout>
-
     </LinearLayout>
-    
+
     <SeekBar
         android:id="@+id/seek_bar"
         android:layout_width="match_parent"

@@ -22,7 +22,7 @@ public class MainActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		if (savedInstanceState == null) {
-			getFragmentManager().beginTransaction()
+			getSupportFragmentManager().beginTransaction()
 					.add(R.id.container, new MainFragment()).commit();
 		}
 	}
@@ -40,7 +40,7 @@ public class MainActivity extends ActionBarActivity {
 		// automatically handle clicks on the Home/Up button, so long
 		// as you specify a parent activity in AndroidManifest.xml.
 		int id = item.getItemId();
-		if (id == R.id.action_settings) {
+		if (id == R.id.action_more_info) {
 			showMoreInfo();
 			return true;
 		}
